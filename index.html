@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Infinite Prestige</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="OmegaNum.js"></script>
+    <script src="saves.js"></script>
+    <script src="main.js"></script>
+  </head>  
+  <body>
+    <div style="font-size: 1.5em">
+      Points: <span id="pts" class="number">0</span>
+    </div>
+    <div style="font-size: 0.75em">
+      You are getting <span id="pps" class="number">1</span> points per second.
+    </div>
+    <br>
+    <button onclick="back()">
+      <
+    </button> Current prestige layer: <span id="layer" class="number">1</span>
+    <button onclick="forward()">
+      >
+    </button><br><br>
+    You have <span id="ppts" class="number">0</span> prestige points (this layer).
+    <div style="font-size: 0.75em">
+    This translates to <span id="ppsmul" class="number">×1</span> points per second.
+      </div><br>
+    <button onclick="prestige()">
+      Prestige for <span id="pending" class="number">0</span> prestige points.
+    </button>
+  </body>
+</html>
